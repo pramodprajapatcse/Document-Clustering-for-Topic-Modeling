@@ -103,7 +103,7 @@ python main.py
 ## 📬 Contact
 
 **Developer:** Pramod Prajapat
-**Email:** \[[youremail@example.com](mailto:prajapatpramod474@gmail.com)]
+**Email:** \[[prajapatpramod474@gmail.com](mailto:prajapatpramod474@gmail.com)]
 **GitHub:** [github.com/pramodprajaaptcse](https://github.com/pramodprajaaptcse)
 
 ---
