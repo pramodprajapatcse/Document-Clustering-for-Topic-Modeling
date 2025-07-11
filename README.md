@@ -1,115 +1,105 @@
 
+#  Document Clustering for Topic Modeling
 
-
-# 📄 Document Clustering for Topic Modeling
-
-This project applies various clustering algorithms to a large corpus of documents to uncover hidden topics and gain insights from unstructured text data. It leverages popular NLP and machine learning techniques for topic modeling, visualizations, and performance analysis.
-
-## 🚀 Objective
-
-To implement document clustering and topic modeling using **Latent Dirichlet Allocation (LDA)** and **K-Means** on the [20 Newsgroups dataset](http://qwone.com/~jason/20Newsgroups/). The goal is to identify patterns and themes within documents and visualize the clusters meaningfully.
+This project demonstrates **unsupervised document clustering** using NLP techniques on the **20 Newsgroups dataset**. It uses **TF-IDF**, **KMeans clustering**, and **PCA/t-SNE** for topic modeling and visualizing document similarity.
 
 ---
 
-## 🧰 Tech Stack
+##  Features
 
-- **Programming Language:** Python 3.13
-- **Libraries & Tools:**
-  - `scikit-learn`
-  - `nltk`
-  - `gensim`
-  - `pandas`, `numpy`
-  - `matplotlib`, `wordcloud`, `pyLDAvis`
+- Load and preprocess text data (20 Newsgroups)
+- Text cleaning using `spaCy` (tokenization, stopword removal, etc.)
+- TF-IDF vectorization
+- KMeans clustering to group documents by topic
+- 2D visualization using PCA and t-SNE
+- View sample documents from each cluster
 
 ---
 
-## 📂 Project Structure
+##  Technologies Used
 
-```
+- Python
+- `scikit-learn` for clustering and dataset
+- `spaCy` for NLP
+- `matplotlib` for plotting
+- `tqdm` for progress monitoring (optional)
 
-document-clustering/
-│
-├── data/                  # Preprocessed and raw data
-├── notebooks/             # Jupyter notebooks for EDA and experiments
-├── models/                # Saved models and topic vectors
-├── visualizations/        # Graphs, word clouds, and pyLDAvis outputs
-├── requirements.txt       # Project dependencies
-└── main.py                # Entry point script
+---
 
+##  Dataset
+
+The project uses the **20 Newsgroups** dataset from `sklearn.datasets`.
+
+```python
+from sklearn.datasets import fetch_20newsgroups
 ````
 
 ---
 
-## 📊 Features
+##  Clustering & Visualization
 
-- 📁 Preprocessing of text (tokenization, stopword removal, lemmatization)
-- 🧠 Document vectorization using TF-IDF and Bag-of-Words
-- 📌 Topic modeling using **LDA (Gensim)** and **K-Means (scikit-learn)**
-- 🌐 Visualization of topics using **pyLDAvis** and **wordclouds**
-- 📈 Cluster evaluation using silhouette score and coherence score
+* **TF-IDF** is used to convert text into numerical features.
+* **KMeans** groups documents into `k` clusters (you can configure `k`).
+* **PCA** and **t-SNE** help reduce dimensions for 2D plotting.
 
 ---
 
-## 📷 Sample Output
+##  How to Run
 
-| LDA Topics (pyLDAvis) | WordCloud Example |
-|-----------------------|--------------------|
-| ![LDA](visualizations/ldavis_output.png) | ![WC](visualizations/topic_wordcloud.png) |
-
----
-
-## 📝 How to Run
+1. Clone the repo or open the notebook in Google Colab.
 
 ```bash
-# 1. Clone the repository
-git clone https://github.com/pramodprajaaptcse/Document-Clustering-for-Topic-Modeling.git
+https://github.com/pramodprajaaptcse/Document-Clustering-for-Topic-Modeling.git
+```
 
-# 2. Create and activate virtual environment
-python -m venv venv
-.\venv\Scripts\activate    # On Windows
+2. Open the notebook and run step-by-step.
+3. Make sure to install required packages:
 
-# 3. Install dependencies
-pip install -r requirements.txt
-
-# 4. Run the main script
-python main.py
-````
+```bash
+pip install spacy scikit-learn matplotlib
+python -m spacy download en_core_web_sm
+```
 
 ---
 
-## 📌 Areas of Focus
+## 📌 Example Output
 
-* Clustering effectiveness and interpretability
-* Topic coherence and separation
-* Optimized pre-processing pipeline
-* Comparative analysis of LDA vs. K-Means
+* Number of documents: `2000`
+* Sample Cluster Visualization:
 
----
-
-## ✅ Evaluation Summary
-
-| Criteria                | Rating     |
-| ----------------------- | ---------- |
-| Adherence to Work       | ⭐️⭐️⭐️⭐️⭐️ |
-| Problem Solving Ability | ⭐️⭐️⭐️⭐️⭐️ |
-| Quality of Work         | ⭐️⭐️⭐️⭐️⭐️ |
-| Creativity & Innovation | ⭐️⭐️⭐️⭐️⭐️ |
-
-> 🔔 Feedback: Excellent application of theory into practice with clean implementation and strong visual storytelling.
+  * PCA Scatter Plot
+  * t-SNE Cluster Plot
 
 ---
 
-## 📬 Contact
+## 📎 Sample Document from Cluster 2
+
+```
+I am sure some bashers of Pens fans are pretty confused about the lack
+of any kind of posts about the recent Pens massacre of the Devils...
+```
+
+---
+
+##  Future Improvements
+
+* Use **LDA** (Latent Dirichlet Allocation) for topic modeling
+* Add **cluster labeling** using top TF-IDF terms
+* Build a **web interface** using Streamlit or Flask
+
+---
+
+## Author
 
 **Developer:** Pramod Prajapat
 **Email:** \[[prajapatpramod474@gmail.com](mailto:prajapatpramod474@gmail.com)]
 **GitHub:** [github.com/pramodprajaaptcse](https://github.com/pramodprajaaptcse)
 
+
+
 ---
 
-## 📄 License
+## 📜 License
 
-This project is licensed under the [MIT License](LICENSE).
-
-
+This project is licensed under the MIT License. See `LICENSE` for more details.
 
