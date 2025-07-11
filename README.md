@@ -1,5 +1,4 @@
 
----
 
 
 # 📄 Document Clustering for Topic Modeling
@@ -112,6 +111,5 @@ python main.py
 
 This project is licensed under the [MIT License](LICENSE).
 
-```
 
 
