@@ -1,7 +1,7 @@
 
 ---
 
-```markdown
+
 # 📄 Document Clustering for Topic Modeling
 
 This project applies various clustering algorithms to a large corpus of documents to uncover hidden topics and gain insights from unstructured text data. It leverages popular NLP and machine learning techniques for topic modeling, visualizations, and performance analysis.
@@ -114,12 +114,4 @@ This project is licensed under the [MIT License](LICENSE).
 
 ```
 
----
 
-Let me know if you want:
-- A version in `.md` file format ready to upload
-- Custom instructions for Colab
-- A badge section (like stars, forks, license, etc.)
-
-Would you like me to generate a `requirements.txt` as well?
-```
